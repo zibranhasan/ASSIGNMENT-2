@@ -1,0 +1,197 @@
+
+/*this is google font for my website*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@800&display=swap');
+
+/*this is style for header part*/
+.header-part{
+background-color:black;
+margin: 50px 30px;
+height: 300px;
+border-radius: 5px;
+display: flex;
+}
+h1{
+color: azure;
+}
+.for-header{
+    height: 300px;
+    width: 80%;
+}
+.button1{
+ background-color: #4CAF50;
+color: white;
+border-radius: 4px;
+text-align: center;
+text-decoration: none;
+height: 60px;
+width: 100px;
+animation-name: header-animation;
+animation-duration: 4s;
+}
+body{
+    font-family: 'Anton', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+/*--------------THIS PART IS FOR ANIMATION OF BUTTON IN HEADER PART---------*/
+@keyframes header-animation {
+    0%   {background-color: yellowgreen;}
+    25%  {background-color: rgb(255, 0, 128);}
+    50%  {background-color: rgb(0, 255, 85);}
+    100% {background-color: rgb(119, 128, 0);}
+  }
+  /*-----style for side box------*/
+  .side-things{
+
+height: 300px;
+width: 300px;
+border: 5px solid rgb(0, 0, 0);
+display: grid;
+grid-template-rows: repeat(3,1fr);
+padding: 10px;
+border-radius: 20px;
+
+}
+/*----THIS STYLES IS FOR BOXES OF THE SIDE BOX-------*/
+.side-thing{
+
+border: 3px solid rgba(255, 30, 0, 0.849);
+margin-bottom: 10px;
+border-radius: 20px;
+padding: 20px 20px 20px 20px;
+
+
+}
+.whole-article{
+    display: flex;
+    margin: 50px 30px;
+}
+/*----THIS PORTION IS FOR BOXES OF THE BOX SITUATED IN RIGHT SIDE -------*/
+.whole-6-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 10px 10px 10px;
+}
+.inside-whole-sec-div{
+    border: 2px solid rgb(5, 5, 87);
+    height: 30px;
+    width: 90px;
+}
+.time-table{
+display: flex;
+justify-content: space-between;
+height:100px;
+width:90px ;
+}
+.for-view-all{
+
+    border: 2px solid rgb(5, 5, 87);
+    height: 30px;
+    width: 90px;
+    background-color: black;
+    text-align: center;
+    margin: 10px 50% 10px 50%;
+    visibility:hidden;
+}
+/*------STYLES FOR FOOTER PART--------*/
+
+.for-footer-heading{
+
+text-align: center;
+
+}
+/*--------this is for 2nd website--------------*/
+.for-ins-div{
+    color: black;
+}
+.for-flag{
+    display: flex;
+    justify-content: center;
+}
+.for-img-of-2{margin: 10px 10px 10px 10px ;}
+.for-text-align{
+    text-align: center;
+}
+.inside-div{
+padding: 20px 20px 20px 20px;
+}
+
+.for-whole-footer{
+display: flex;
+justify-content:center;
+color: white;
+}
+.contact{
+    margin: 40px 30px 60px 10px;
+}
+.for-communication{
+display: flex;
+justify-content: center;   
+}
+.link{
+    margin: 40px 30px 60px 10px;
+}
+footer{
+    background-color: black;
+}
+/*-------media query---tablet--------*/
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    .side-things{
+        grid-template-columns: repeat(3,1fr);
+        border: 0px;
+        width: 100%;
+    }
+    .whole-6-section{
+    
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    }
+    .whole-article{
+        grid-template-columns: repeat(1,1fr);
+        display: block;
+    }
+
+    .for-view-all{
+        visibility: visible;
+        border: 2px solid rgb(5, 5, 87);
+    height: 30px;
+    width: 90px;
+    background-color: black;
+    text-align: center;
+    margin:10px 90px 10px 350px;
+       
+    }
+}
+
+/*---------Mobile devices----------*/
+@media only screen and (max-width:688px){
+
+
+    .side-things{
+        grid-template-rows: repeat(3,1fr);
+        border: 0px;
+        width: 100%;
+    }
+    .whole-6-section{
+    
+    grid-template-columns: repeat(1,1fr);
+    
+    }
+    .whole-article{
+        grid-template-columns: repeat(1,1fr);
+        display: block;
+    }
+
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+.for-whole-footer{
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+}
